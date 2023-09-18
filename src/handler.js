@@ -68,7 +68,7 @@ const getNoteByIdHandler = (request, h) => {
 
 const updateNotesByIdHandler = (request, h) => {
   const { id } = request.params;
-  const { tittle, tags, body } = request.payload;
+  const { title, tags, body } = request.payload;
   const updatedAt = new Date().toISOString();
 
   const index = notes.findIndex((note) => note.id === id);
@@ -76,7 +76,7 @@ const updateNotesByIdHandler = (request, h) => {
   if (index !== -1) {
     notes[index] = {
       ...notes[index],
-      tittle,
+      title,
       tags,
       body,
       updatedAt,
