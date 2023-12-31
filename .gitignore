@@ -1,2 +1,4 @@
 node_modules
 notes-api-webserver.pem
+notes-api.postman_collection.json
+notes-app-back-end.postman_environment.json 
